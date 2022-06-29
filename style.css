@@ -1,0 +1,20 @@
+.wrapper{
+    margin: 75px;
+    justify-content: center;
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-div{
+    border: 1px;
+    border-style: solid;
+    height: 50px;
+    width: 50px;
+}
+
+.trail{
+    background-color: black;
+}
