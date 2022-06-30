@@ -1,20 +1,107 @@
+@import url(//fonts.googleapis.com/css?family=Press Start 2P);
+
+body{
+    background-color:azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.title{
+    font: bold;
+    color:purple;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+button{
+    background-color:cadetblue;
+    color:beige;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 18px;
+    border: none;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 24px;
+    margin: 8px;
+}
+
 .wrapper{
-    margin: 75px;
-    justify-content: center;
+    background-color:antiquewhite;
+    margin: 8px;
+    width: 750px;
+    height: 750px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 3px 8px;
+
 }
 
 .main-button {
     display: flex;
     justify-content: center;
+    padding: 16px;
 }
 
-.grid-div{
+.grid-div {
     border: 1px;
     border-style: solid;
-    height: 50px;
-    width: 50px;
+    border-color:cyan;
 }
 
 .trail{
     background-color: black;
+}
+
+/* CSS - This is the only code I took from the web, like a PRO would do ;)*/
+button {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover,
+button:active {
+  outline: 0;
+}
+
+button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+button:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 16px 32px;
+  }
 }
